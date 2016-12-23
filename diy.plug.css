@@ -1,0 +1,278 @@
+@charset "utf-8";
+/**遮罩**/
+input{ margin: 0; padding: 0;}
+label{ vertical-align: middle;}
+.my-shade {
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+	-webkit-opacity: 0.5;
+	filter: alpha(opacity=50); 
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 3;
+	}
+.my-layer{
+	position: fixed;
+	width: 200px;
+	height: 200px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background: #fff;
+	/*resize:both;*//*用于设置了所有除overflow为visible的元素*/
+	/*overflow:auto;*/
+	z-index: 4;
+	animation-duration: 0.3s;
+    animation-fill-mode: both;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
+	display: none;
+}
+.my-layer .layer-icon-btn{
+	display: block;
+	float: right;
+	background: url(images/icon.png) no-repeat;
+	width: 12px;
+	height: 12px;
+	cursor: pointer;
+	}
+.my-layer .my-layer-close1:hover {
+	opacity: 0.7;
+	-moz-opacity: 0.7;
+	-webkit-opacity: 0.7;
+}
+.my-layer .layer-foot {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	}
+/**file美化**/
+.beautiful-file {
+	position: relative;
+	cursor: pointer;
+	}
+.beautiful-file input{
+	position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer;
+	}
+.beautiful-checkbox {
+	display:inline-block;
+	vertical-align:middle;
+	background:url(images/beautiful.png) no-repeat -343px 0px;
+	width:12px;
+	height:9px;
+	position:relative;
+	}
+.beautiful-checkbox-checked{
+	background-position: -1px 0px;
+	}	
+.beautiful-checkbox input{
+	position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer;
+	
+	}
+
+.beautiful-radio {
+	display:inline-block;
+    width:22px;
+    height:22px;
+    background:url(images/beautiful.png) no-repeat -332px -40px;
+    position: relative;
+    cursor: pointer;
+    *zoom: 1;
+    vertical-align:middle;
+	}
+.beautiful-radio-checked{
+	background-position: 0 -40px;
+	}	
+.beautiful-radio input{
+	position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer;
+    width:22px;
+    height:22px;
+	}
+
+/**Tab切换**/
+.tab-content .fade {
+    opacity: 0;
+    transition: opacity 0.15s linear 0s;
+}
+.tab-content .in {opacity: 1;}
+.tab-content { clear: both;}
+.tab-content > .show-pane { display: none;}
+.tab-content > .active {display: block;}
+
+/**下拉框美化**/
+.beautiful-select {
+	border: 1px solid #e5e5e5;
+	margin-right: 20px;
+	position: relative;
+	/*height: 41px;*/
+	/*width: 198px;*/
+}
+.beautiful-select span {
+	background: url(images/select-icon.png) no-repeat /*176px center*/;
+	padding-right: 26px;
+	width: 172px;
+	color: #666;
+	display: block;
+	font-size: 14px;
+	/*height: 41px;
+	line-height: 41px;*/
+	padding-left: 10px;
+	padding-right: 25px;
+	cursor: pointer;
+	overflow: hidden;
+	white-space: normal;
+	text-overflow :ellipsis;
+}
+.beautiful-select ul {
+	position: absolute;
+	/*top: 41px;*/
+	background: #fff;
+	border: 1px solid #e5e5e5;
+	display: none;
+	overflow: hidden;
+	margin-left:-1px;
+	padding: 15px 10px 20px;
+	/*width: 178px;*/
+	z-index: 2;
+	max-height: 250px;
+	overflow-y: auto;
+}
+.beautiful-select ul li {
+    color: #c3c3c3;
+    cursor: pointer;
+	width:100%;
+    font-size: 12px;
+    line-height:26px;
+    text-align:left;
+}
+/**阅读更多**/
+.read-wrap {
+	width:300px;
+	overflow:hidden;
+	height:auto;
+	}
+.my-marquee{ 
+  width: 800px; 
+  height: 130px; 
+  margin: 100px auto; 
+  overflow: hidden; 
+  position: relative; 
+} 
+.my-marquee ul{ 
+  width:10000px; 
+  position: absolute; 
+} 
+.my-marquee ul li{ 
+  float:left; 
+  margin-right: 20px; 
+} 
+
+.mytoggle .toggle_btn{
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	vertical-align:middle;
+	background: url(images/open_close.png) no-repeat 0 1px;
+	cursor:pointer;
+}	
+.mytoggle .toggle_btn.up { background-position: 0 -13px}
+
+
+div,p,ul,li,button,a,input,img{
+	margin: 0;
+	padding: 0;
+}
+input,textarea,button,img,a { outline: 0 none;}
+ul li {list-style: none; }
+
+.btn {
+	display: inline-block;
+	height: 44px;
+    width: 100px;
+	/*border: 1px solid transparent;*/
+	border: 1px solid;
+	cursor: pointer;
+    /*color: #989898;*/
+    font-size: 14px;
+	text-align: center;
+	vertical-align: middle;
+	overflow: hidden;
+	background: #6f6f6f;
+}
+a.btn {
+	height: 42px;
+	line-height: 42px;
+	}
+.btn-default {
+    background-color: #428bca;
+    border-color: #357ebd;
+    color: #fff;
+}
+.btn-yellow {
+	background-color: #e47f2f;
+	color: #fff;
+	}
+.btn-lg {
+	width: 200px;
+	}
+.btn-sm {
+	width: 80px;
+	}
+.btn-xs {
+	width: 50px;
+	}
+.btn-disabled {
+	
+	}
+
+
+.form-txt{
+    display:inline-block;
+	padding:0 5px;
+    height: 44px;
+	font-size: 14px;
+    line-height: 1;
+	line-height:44px\9;
+	outline:none;
+	color: #989898;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,216 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="diy.plug.css"/>
+<!--[if IE]>
+    <script src="better-dom-legacy.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<h3>全选与反选</h3>
+<input type="checkbox" name="myCheckboxAll" id="myCheckboxAll"><label for="myCheckboxAll">全选</label>
+<input type="checkbox" name="myCheckbox">
+<input type="checkbox" name="myCheckbox">
+<input type="checkbox" name="myCheckbox">
+<input type="checkbox" name="myCheckbox">
+<h3>遮罩层、消息提示框</h3>
+<button type="button" id="openLayer">打开遮罩</button>
+<button type="button" id="openCon">打开确认框</button>
+<div class="my-layer" id="lay1">
+	<div class="layer-head">
+    	<a class="layer-close layer-icon-btn"></a>
+    </div>
+    <div class="layer-content">
+    	遮罩层、消息提示框
+    </div>
+    <div class="layer-foot">
+    	<button type="button" class="layer-close layer-btn">取消</button>
+        <button type="button" class="layer-sure layer-btn">确定</button>
+    </div>
+</div>
+<h3>file 、 checkbox、 radio 美化</h3>
+
+<input type="file">
+<br>
+<input type="file">
+<br>
+<input type="file">
+<br>
+<input type="checkbox" id="ck" class="single-checkbox"><label for="ck">记住密码</label>
+<input type="radio" name="sex" id="boy" checked><label for="boy">男</label>
+<input type="radio" name="sex" id="girl"><label for="girl">女</label>
+<h3>注册错误提示</h3>
+<form>
+	<p><label>姓名</label><input type="text"></p>
+    <p><label>密码</label><input type="password"></p>
+    <p><label>手机</label><input type="text"></p>
+    <p><button type="button"> 立即注册</button></p>
+</form>
+<h3>Tab切换</h3>
+<ul class="tab-change">
+    <li class="active"><a href="javascript:;">谁看过我</a></li>
+    <li><a href="javascript:;">我看过谁</a></li>
+</ul>
+<div class="tab-content">
+	<div class="show-pane fade in active">选项一</div>
+    <div class="show-pane fade">选项二</div>
+</div>
+<ul class="tab-change">
+    <li class="active"><a href="javascript:;">谁看过我</a></li>
+    <li><a href="javascript:;">我看过谁</a></li>
+</ul>
+<div class="tab-content">
+	<div class="show-pane fade in active">选项一</div>
+    <div class="show-pane fade">选项二</div>
+</div>
+<h3>下拉框美化</h3>
+<div class="beautiful-select">
+    <span>营业执照登记号</span>
+    <ul>
+        <li>营业执照登记号</li>
+        <li>营业执照登记号2</li>
+    </ul>
+</div>
+<!--<div class="beautiful-select">
+    <select>
+        <option>Here is the first option</option>
+        <option>The second option</option>
+    </select>
+</div>-->
+
+<h3>查看更多</h3>
+
+<p class="read-wrap">
+	国家主权是国家的固有权利，是国家独立的重要标志。网络主权或网络空间主权是国家主权在网络空间的自然延伸和体现。对内而言，网络主权指的是国家独立自主地发展、管理、监督本国互联网事务，不受外部干涉；对外而言，网络主权指的是一国能够平等地参与国际互联网治理，有权防止本国互联网受到外部入侵和攻击。习总书记指出，“《联合国宪章》确立的主权平等原则是当代国际关系的基本准则，覆盖国与国交往各个领域，其原则和精神也应该适用于网络空间。”目前，网络主权的观念已经得到多数国家的认可。网络空间不是一个如同传统的公海、极地、太空一样的全球公域，而是建立在各国主权之上的一个相对开放的信息领域。
+</p>
+<a href="javascript:;" class="read-more">阅读更多</a>
+<br>
+<br>
+
+<h3>图文混排</h3> 
+
+<div class="my-marquee"> 
+    <ul class="content"> 
+      <li><a href="#"><img src="images/marquee-img.jpg" alt=""></a></li> 
+      <li><a href="#"><img src="images/marquee-img.jpg" alt=""></a></li> 
+      <li><a href="#"><img src="images/marquee-img.jpg" alt=""></a></li> 
+      <li><a href="#"><img src="images/marquee-img.jpg" alt=""></a></li> 
+      <li><a href="#"><img src="images/marquee-img.jpg" alt=""></a></li> 
+      <li><a href="#"><img src="images/marquee-img.jpg" alt=""></a></li> 
+    </ul> 
+  </div>      
+                    
+
+<h3>常用样式</h3>
+
+<button type="button" class="btn btn-default">默认</button> 
+<br>
+<br>
+<button type="button" class="btn btn-yellow">yellow</button>
+<br>
+<br>
+<button type="button" class="btn btn-lg">lg</button>
+<br>
+<br>
+<button type="button" class="btn btn-sm">sm</button>
+<br>
+<br>
+<button type="button" class="btn btn-xs">xs</button>
+<br>
+<br>
+<button type="button" class="btn btn-disabled">btn-disabled</button>
+<br>
+<br>
+<br>
+
+
+<a class="btn btn-default">默认</a> 
+<br>
+<br>
+<a class="btn btn-yellow">yellow</a>
+<br>
+<br>
+<a class="btn btn-lg">lg</a>
+<br>
+<br>
+<a class="btn btn-sm">sm</a>
+<br>
+<br>
+<a class="btn btn-xs">xs</a>
+<br>
+<br>
+<a class="btn btn-disabled">btn-disabled</a>
+<br>
+<br>
+<br>
+
+
+
+<input type="password" class="form-txt" placeholder="请输入密码...">
+<br>
+<br>
+
+
+
+<ul class="mytoggle">
+	<li>
+    	<h5><a href="" >在[投资机构]中关于</a><i class="toggle_btn"></i></h5>
+        <div class="toggle_content">腾讯产业共赢基金</div>
+    </li>
+    <li>
+    	<h5><a href="" >在[聚人脉]中关于</a><i class="toggle_btn"></i></h5>
+        <div class="toggle_content">腾讯产业共赢基金聚人脉</div>
+    </li>
+    <li>
+    	<h5><a href="">在[资讯]中关于</a><i class="toggle_btn"></i></h5>
+        <div class="toggle_content">腾讯产业共赢基金资讯]</div>
+    </li>
+</ul>
+
+
+
+
+
+</body>
+<script src="better-dom.js"></script>
+<script src="better-placeholder-polyfill.js"></script>
+<script src="jquery-1.11.3.min.js"></script>
+<script src="diy.plug.js"></script>
+<script>
+
+
+
+  
+		
+$(function(){
+	//全选与反选
+	$("input[name='myCheckboxAll']").on("click",function(){
+		MYSpace.event.chooseCheckboxAll($(this));
+	})
+	$("input[name='myCheckbox']").on("click",function(){
+		MYSpace.event.chooseCheckbox($(this));
+	})
+	
+	//遮罩层
+	$("#openLayer").on("click",function(){
+		MYSpace.event.myLayer("lay1");
+	})
+	
+	$(".layer-sure").on("click",function(){
+		//layerHide();
+	})
+	$("#openCon").on("click",function(){
+        MYSpace.event.confirm('您确定要退出吗？', function(){alert('ok')})
+	})
+	
+	
+	
+	
+		
+})
+	
+</script>
+</html>
